@@ -1,1 +1,19 @@
-# todo-list
+# Todo List
+
+## Get the project
+
+```
+git clone git@github.com:JasonFelgenhauer/todo-list.git
+```
+
+or
+
+```
+git clone https://github.com/JasonFelgenhauer/todo-list.git
+```
+
+or download zip
+
+## Push history
+
+1. Add structure of the project.
