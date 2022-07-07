@@ -4,7 +4,10 @@ const app = express();
 const port = 3000;
 
 const tasks = [
-    
+    {
+        title: 'Task 1',
+        done: true,
+    }
 ]
 
 app.use(express.static(path.join(__dirname, 'public')));

@@ -1,4 +1,16 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 // Variable
+
+$color_1: #A5AFFB;
+$color_2: #EEDFF2;
+$color_3: #0F0E0E;
+$color_4: #00C48C;
+$color_5: #FF647C;
+
+$font: 'Roboto', sans-serif;
 
 // Reset
 
@@ -6,6 +18,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body,
+html{
+    font-size: 16px;
+    font-family: $font;
+    background: $color_1;
+    color: $color_3;
 }
 li{
     list-style-type: none;
