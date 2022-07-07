@@ -20,6 +20,11 @@ or download zip
 2. Add html & css.
 3. Add logic & responsive
 4. Add screenshot in README
+5. Add TODO to the README
+
+## TODO:
+
+1. Added sessions to keep this todo list
 
 ## Screenshot
 
