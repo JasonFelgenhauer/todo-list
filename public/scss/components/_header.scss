@@ -12,7 +12,7 @@
         align-items: flex-start;
         width: 100%;
         &_left{
-            width: 40%;
+            width: 25%;
             form{
                 background: $color_2;
                 padding: 15px;
@@ -45,17 +45,25 @@
             }
         }
         &_right{
-            width: 40%;
+            width: 65%;
             ul{
                 background: $color_2;
                 padding: 15px;
                 border-radius: 6px;
+                height: 500px;
+                overflow-y: scroll;
+                overflow-x: hidden;
                 li{
                     justify-content: space-between;
+                    margin: 10px 0;
                     span{
                         font-size: 1.2em;
+                        width: 85%;
+                        overflow: hidden;
                     }
                     a{
+                        width: 15%;
+                        text-align: center;
                         font-size: 1.2em;
                         text-transform: uppercase;
                         padding: 10px 20px;
@@ -72,6 +80,84 @@
                     }
                     .end{
                         background: $color_4;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1050px){
+        &_content{
+            &_right{
+                ul{
+                    li{
+                        span{
+                            width: 65%;
+                        }
+                        a{
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 900px){
+        &_content{
+            align-items: center;
+            flex-direction: column;
+            &_left{
+                width: 90%;
+                margin-bottom: 50px;
+            }
+            &_right{
+                width: 90%;
+                ul{
+                    height: 300px;
+                    overflow-y: scroll;
+                    li{
+                        span{
+                            width: 85%;
+                        }
+                        a{
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 750px){
+        &_content{
+            &_right{
+                ul{
+                    li{
+                        span{
+                            width: 65%;
+                        }
+                        a{
+                            width: 35%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 500px){
+        &_content{
+            &_right{
+                width: 95%;
+                ul{
+                    li{
+                        flex-direction: column;
+                        span{
+                            width: 100%;
+                        }
+                        a{
+                            width: 100%;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
                     }
                 }
             }

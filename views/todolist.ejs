@@ -14,7 +14,7 @@
                 <div class="header_content_left">
                     <form action="/" method="post">
                         <div>
-                            <input type="text" name="task_name" placeholder="New task">
+                            <input type="text" name="task_name" placeholder="New task" required>
                         </div>
                         <div>
                             <input type="submit" value="Create">
@@ -23,16 +23,16 @@
                 </div>
                 <div class="header_content_right">
                     <ul>
-                        <% tasks.forEach((t) => { %>
+                        <% tasks.forEach((t, i) => { %>
                             <% if(t.done){ %>
                                 <li class="container">
-                                    <span><%= t.title %></span>
-                                    <a class="delete" href="#">Delete</a>
+                                    <span><s><%= t.title %></s></span>
+                                    <a class="delete" href="/task/<%= i %>/delete">Delete</a>
                                 </li>
                             <% }else{ %>
                                 <li class="container">
                                     <span><%= t.title %></span>
-                                    <a class="end" href="#">End</a>
+                                    <a class="end" href="/task/<%= i %>/done">End</a>
                                 </li>
                             <% } %>
                         <% }) %>

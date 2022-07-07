@@ -18,3 +18,4 @@ or download zip
 
 1. Add structure of the project.
 2. Add html & css.
+3. Add logic & responsive

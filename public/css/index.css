@@ -61,7 +61,7 @@ a {
 }
 
 .header_content_left {
-  width: 40%;
+  width: 25%;
 }
 
 .header_content_left form {
@@ -126,26 +126,34 @@ a {
 }
 
 .header_content_right {
-  width: 40%;
+  width: 65%;
 }
 
 .header_content_right ul {
   background: #EEDFF2;
   padding: 15px;
   border-radius: 6px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .header_content_right ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 10px 0;
 }
 
 .header_content_right ul li span {
   font-size: 1.2em;
+  width: 85%;
+  overflow: hidden;
 }
 
 .header_content_right ul li a {
+  width: 15%;
+  text-align: center;
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -167,5 +175,74 @@ a {
 
 .header_content_right ul li .end {
   background: #00C48C;
+}
+
+@media (max-width: 1050px) {
+  .header_content_right ul li span {
+    width: 65%;
+  }
+  .header_content_right ul li a {
+    width: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header_content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header_content_left {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .header_content_right {
+    width: 90%;
+  }
+  .header_content_right ul {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .header_content_right ul li span {
+    width: 85%;
+  }
+  .header_content_right ul li a {
+    width: 15%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header_content_right ul li span {
+    width: 65%;
+  }
+  .header_content_right ul li a {
+    width: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header_content_right {
+    width: 95%;
+  }
+  .header_content_right ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header_content_right ul li span {
+    width: 100%;
+  }
+  .header_content_right ul li a {
+    width: 100%;
+  }
+  .header_content_right ul li a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=index.css.map */
