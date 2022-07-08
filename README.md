@@ -23,10 +23,7 @@ or download zip
 3. Add logic & responsive
 4. Add screenshot in README
 5. Add TODO to the README
-
-## TODO:
-
-1. Added sessions to keep this todo list
+6. Add session.
 
 ## Screenshot
 

@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Todo List</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <header class="container header">
-            <h1>Todo list</h1>
-            <div class="container header_content">
-                <div class="header_content_left">
-                    <form action="/" method="post">
-                        <div>
-                            <input type="text" name="task_name" placeholder="New task" required>
-                        </div>
-                        <div>
-                            <input type="submit" value="Create">
-                        </div>
-                    </form>
-                </div>
-                <div class="header_content_right">
-                    <ul>
-                        <% tasks.forEach((t, i) => { %>
-                            <% if(t.done){ %>
-                                <li class="container">
-                                    <span><s><%= t.title %></s></span>
-                                    <a class="delete" href="/task/<%= i %>/delete">Delete</a>
-                                </li>
-                            <% }else{ %>
-                                <li class="container">
-                                    <span><%= t.title %></span>
-                                    <a class="end" href="/task/<%= i %>/done">End</a>
-                                </li>
-                            <% } %>
-                        <% }) %>
-                    </ul>
-                </div>
-            </div>
-        </header>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header class="container header">
+			<h1>Todo list</h1>
+			<div class="container header_content">
+				<div class="header_content_left">
+					<form action="/" method="post">
+						<div>
+							<input type="text" name="task" placeholder="New task" required />
+						</div>
+						<div>
+							<input type="submit" value="Create" />
+						</div>
+					</form>
+				</div>
+				<div class="header_content_right">
+					<ul>
+						<% tasks.forEach((t, i) => { %> <% if(t.done){ %>
+						<li class="container">
+							<span><s><%= t.title %></s></span>
+							<a class="delete" href="/task/<%= i %>/delete">Delete</a>
+						</li>
+						<% }else{ %>
+						<li class="container">
+							<span><%= t.title %></span>
+							<a class="end" href="/task/<%= i %>/done">End</a>
+						</li>
+						<% } %> <% }) %>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</body>
 </html>
