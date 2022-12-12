@@ -2,7 +2,7 @@
 
 # Todo List
 
-Project [here](http://45.140.164.217:3002)
+Project [here](http://todo-list.jason-fel.be)
 
 ## Get the project
 
@@ -26,6 +26,7 @@ or download zip
 4. Add screenshot in README
 5. Add TODO to the README
 6. Add session.
+7. Change link in readme
 
 ## Screenshot
 

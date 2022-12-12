@@ -1,8 +1,10 @@
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
+require('dotenv').config();
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 const tasks = [];
 
@@ -11,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
 	session({
-		secret: 'secret',
+		secret: process.env.SESSION_SECRET,
 		resave: true,
 		saveUninitialized: true,
 	})
