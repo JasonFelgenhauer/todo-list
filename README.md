@@ -30,4 +30,4 @@ or download zip
 
 ## Screenshot
 
-![index](http://pics.jason-fel.be/uploads/1657226379Capture%20d’écran%202022-07-07%20223852.png)
+![index](https://media.discordapp.net/attachments/767431513016500235/1122265007103692830/image.png?width=720&height=375)
